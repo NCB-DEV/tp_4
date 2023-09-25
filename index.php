@@ -1,0 +1,20 @@
+<?php 
+include('controler/controler.php');
+if(isset($_GET['action'])){
+    if($_GET['action']=="acceuil"){
+        accueil();
+    }
+    elseif($_GET["action"]=="communaute"){
+        communauté();
+    }
+    elseif($_GET["action"]=='cours'){
+        cours();
+    }
+    elseif($_GET["action"]=="contact"){
+        contact();
+    }
+}
+else{
+    accueil();
+}
+?>
